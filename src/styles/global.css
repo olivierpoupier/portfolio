@@ -4,6 +4,14 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+@font-face {
+	font-family: 'AA00 Business System';
+	src: url('/fonts/AA00BusinessSystem-Reg.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
@@ -17,7 +25,7 @@
 		rgba(var(--gray), 33%);
 }
 body {
-	font-family: "Geist Sans", sans-serif;
+	font-family: "AA00 Business System", sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -44,6 +52,7 @@ h6 {
 	margin: 0 0 0.5rem 0;
 	color: rgb(var(--black));
 	line-height: 1.2;
+	font-family: Helvetica, Arial, sans-serif;
 }
 h1 {
 	font-size: 3.052em;
