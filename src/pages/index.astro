@@ -9,40 +9,80 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.tech-stack-section {
+				margin: 0;
+				padding: 0;
+			}
+			.about-content {
+				line-height: 1.6;
+				margin-bottom: 2em;
+			}
+			.about-content p {
+				margin: 0.5em 0;
+			}
+			.links-section {
+				margin: 2em 0;
+			}
+			.about-me-section {
+				margin: 2em 0;
+			}
+			.about-me-section h3 {
+				margin-bottom: 1em;
+			}
+			.about-me-section p {
+				line-height: 1.6;
+				margin: 0.75em 0;
+			}
+			.read-links-section {
+				margin: 2em 0;
+			}
+			hr {
+				margin: 2em auto;
+				border: none;
+				border-top: 1px solid var(--primary);
+				width: 20%;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<div class="tech-stack-section">
+				<h2>Developer Portfolio</h2>
+
+				<div class="links-section">
+					<p>
+						<a href="https://www.linkedin.com/in/opoupier/" target="_blank" rel="noopener noreferrer">LinkedIn</a> •
+						<a href="https://github.com/olivierpoupier" target="_blank" rel="noopener noreferrer">GitHub</a> •
+						<a href="mailto:olivier@poupier.net">Email</a> •
+						<a href="/resume.pdf" download>Resume</a>
+					</p>
+				</div>
+
+				<div class="about-me-section">
+					<h3>About Me</h3>
+					<p>
+						I'm a developer focused on building thoughtful, user-centeric applications. My work mostly consists of finding creative and efficient solutions tailored to specific client needs.
+					</p>
+					<p>
+						I'm passionate about continuous learning and pushing the boundaries of what's possible with modern web technologies.
+						Looking ahead, I aim to work on projects that make a meaningful impact, whether that's improving developer tools,
+						enhancing user experiences, or solving complex technical challenges.
+					</p>
+				</div>
+
+				<hr />
+
+				<div class="read-links-section">
+					<p>
+						Read about past projects <a href="/case-studies">here</a>
+					</p>
+					<p>
+						Read about what's racking my brain <a href="/side-tracks">here</a>
+					</p>
+				</div>
+			</div>
 		</main>
 		<Footer />
 	</body>

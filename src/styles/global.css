@@ -13,6 +13,7 @@
 }
 
 :root {
+	--primary: #174524;
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
@@ -38,7 +39,7 @@ body {
 	line-height: 1.7;
 }
 main {
-	width: 720px;
+	width: 1200px;
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;
@@ -74,10 +75,18 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: var(--primary);
 }
-a:hover {
-	color: var(--accent);
+main a {
+	padding: 0.2em 0.4em;
+	border-radius: 4px;
+	transition: all 0.2s ease;
+	font-weight: 500;
+}
+main a:hover {
+	background-color: var(--primary);
+	color: white;
+	text-decoration: none;
 }
 p {
 	margin-bottom: 1em;
