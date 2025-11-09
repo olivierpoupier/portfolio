@@ -9,12 +9,28 @@ import { SITE_TITLE } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={`Now | ${SITE_TITLE}`} description="What I'm doing now" />
+		<style>
+			hr {
+				margin: 2em auto;
+				border: none;
+				border-top: 1px solid var(--primary);
+				width: 20%;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>Now</h1>
-			<p>What I'm currently working on and focused on.</p>
+			<h4>What am I up to these days?</h4>
+			<p>Since November 2024, I have been focusing on offering freelance system design and software development services. My clients are mainly in the cybersecurity, financial, and real-estate management spaces, where I help them architect and build robust, scalable solutions tailored to their specific needs.</p>
+
+			<p>During this time, I've also been keeping a close eye on the AI code generation space and related code analysis tools, as well as the broader impacts of AI on the software industry in general. I'm fascinated by how these technologies are reshaping how we write, review, and think about code.</p>
+
+			<p>Additionally, I've been actively expanding my system design and architecture capabilities by experimenting with different design patterns and building varied real-world systems. This hands-on exploration helps me stay sharp and brings fresh perspectives to the projects I work on with clients.</p>
+
+			<hr />
+
+			<p>If you'd like to discuss a project or explore how I can help with your system design and development needs, feel free to <a href="/contact">reach out</a>.</p>
 		</main>
 		<Footer />
 	</body>
