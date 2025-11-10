@@ -1,21 +1,57 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
 ---
 
-<Layout
-	title="bout Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('September 29, 2025')}
-	heroImage={AboutHeroImage}
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
-</Layout>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`About | ${SITE_TITLE}`} description="About Olivier - Full-stack developer and systems architect" />
+		<style>
+			hr {
+				margin: 2em auto;
+				border: none;
+				border-top: 1px solid var(--primary);
+				width: 20%;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h4>About Me</h4>
+
+			<p>My name's Olivier.</p>
+
+			<p>I have a big interest in visual arts, industrial design and overall functional stuff. From the very start, I was drawn by the idea that we can engineer solutions to make our daily lives better.</p>
+
+			<p>I'm a full-stack developer and systems architect with one simple belief: Solutions should solve specific challenges elegantly rather than pretending to solve many superficially.</p>
+
+			<p>Coding has been part of my life since I was 9. In high school I started participating in different robotics competitions, first doing Lego robots but rapidly switching to <a href="https://www.firstinspires.org/programs/frc/">FIRST robotics</a>. I participated as a student for 3 years and then mentored for the start of a season until Covid hit. At 16, during a competition I helped a PhD student from University of Michigan fix a disconnected wire and a few falling bolts on a robot he was demoing. He then mentored me in the building of a robot arm over the next few months, during which I learned how to use CAD software and the basics of PCB design.</p>
+
+			<p>Also during my high school years, at 15, I started participating in hackathons. This allowed me to work on many different projects with diverse teams from all sorts of backgrounds. It allowed me to explore a very broad range of stacks and tools to build anything from: A news articles aggregation systems, A mobile app to help refugees have access to redcross services to a recipe website to help plan meals for the week. Through one of the hackathons I met a local tech CEO sponsoring the event who allowed me to visit his company's office for a one day look-around which turned into my first job as a developer.</p>
+
+			<p>After high school I started making websites for artists and brands which led me to meet WallyPDF who allowed me to work with A$AP Rocky's <a href="https://awge.com">Awge</a>. Through this experience I ended up working on many websites but also on brand marketing plans and acquiring more real world experience by starting a few little brands with different partners.</p>
+
+			<p>I have also been making an explicit effort to work in a broad variety of fields and contexts. This allowed me to deepen my skills and to apply my knowledge to systems of varying scales; from systems handling terabytes of data everyday to simple apps for a few users.</p>
+
+			<p>Looking ahead, I'm keen to deepen my work in robotics-adjacent systems, embedded electronics, and cybersecurity. The intersection of hardware, software, and real world impact really excites me — and I'm ready to tackle projects that push the boundaries of my skills.</p>
+
+			<h5>My Approach & Values</h5>
+			<ul>
+				<li><strong>User-centric thinking:</strong> I believe every technical decision should relate back to the person using the system.</li>
+				<li><strong>Elegant over flashy:</strong> It's easy to add complexity, harder to simplify. I aim for the clean solution.</li>
+				<li><strong>Curiosity-driven:</strong> If I'm not exploring a new tech, reading a new paper, or tinkering with a board, I'm not satisfied.</li>
+				<li><strong>Collaborative mindset:</strong> Even as a freelancer, I see myself part of a team: with the client, with users, with stakeholders. Communication matters.</li>
+				<li><strong>Security-aware:</strong> In a world of growing threats, I don't just build — I build with awareness of what could go wrong, and how to make it hard to go wrong.</li>
+			</ul>
+
+			<hr />
+
+			<p>If you'd like to discuss a project or explore how I can help with your system design and development needs, feel free to <a href="/contact">reach out</a>.</p>
+		</main>
+		<Footer />
+	</body>
+</html>
